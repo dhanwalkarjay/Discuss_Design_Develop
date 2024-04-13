@@ -51,7 +51,7 @@ export function CreateRoomForm() {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} placeholder="Your project name." />
                   </FormControl>
                   <FormDescription>
                     This is your public room name.
@@ -68,7 +68,7 @@ export function CreateRoomForm() {
                 <FormItem>
                   <FormLabel>Description</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} placeholder="I'm working on side project, come join me." />
                   </FormControl>
                   <FormDescription>
                     Describe your room. 
@@ -85,7 +85,7 @@ export function CreateRoomForm() {
                 <FormItem>
                   <FormLabel>Github Repo</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} placeholder="https://github.com/"/>
                   </FormControl>
                   <FormDescription>
                     Please put a link to the project you are working on. 
@@ -100,12 +100,12 @@ export function CreateRoomForm() {
               name="language"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Primary Programming Language</FormLabel>
+                  <FormLabel>Tags</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} placeholder="javascript, typescript, react." />
                   </FormControl>
                   <FormDescription>
-                    List Primary Programming language your are working with.
+                    List your programming language, frameworks, libraries, etc. your are working with.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
