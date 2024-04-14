@@ -1,6 +1,6 @@
 
-import { Button } from "@/components/ui/button";
-import { getRooms } from "@/data-access/rooms";
+import { Button } from "@/src/components/ui/button";
+import { getRooms } from "@/src/data-access/rooms";
 import Link from "next/link";
 import { SearchBar } from "./search-bar";
 import { RoomCard } from "./room-card";

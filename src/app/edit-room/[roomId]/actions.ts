@@ -1,8 +1,8 @@
 'use server';
 
-import { editRoom, getRoom } from "@/data-access/rooms";
-import { Room } from "@/db/schema";
-import { getSession } from "@/lib/auth";
+import { editRoom, getRoom } from "@/src/data-access/rooms";
+import { Room } from "@/src/db/schema";
+import { getSession } from "@/src/lib/auth";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 

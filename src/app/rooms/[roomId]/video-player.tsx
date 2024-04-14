@@ -1,7 +1,7 @@
 'use client'
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
-import { Room } from '@/db/schema';
+import { Room } from '@/src/db/schema';
 import {
     Call,
     CallControls,

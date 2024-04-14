@@ -1,5 +1,5 @@
-import { db } from "@/db";
-import { users } from "@/db/schema";
+import { db } from "@/src/db";
+import { users } from "@/src/db/schema";
 import { eq } from "drizzle-orm";
 
 export async function deleteUser(userId: string) {

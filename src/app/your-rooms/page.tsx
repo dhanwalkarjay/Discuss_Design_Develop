@@ -1,6 +1,6 @@
 
-import { Button } from "@/components/ui/button";
-import { getRooms, getUserRooms } from "@/data-access/rooms";
+import { Button } from "@/src/components/ui/button";
+import { getRooms, getUserRooms } from "@/src/data-access/rooms";
 import Link from "next/link";
 import { UserRoomCard } from "./user-room-card";
 import { unstable_noStore } from "next/cache";

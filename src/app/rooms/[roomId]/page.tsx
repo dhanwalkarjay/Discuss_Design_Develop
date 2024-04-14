@@ -1,10 +1,10 @@
-import { TagsList } from "@/components/tags-list";
-import { Badge } from "@/components/ui/badge"
-import { getRoom } from "@/data-access/rooms";
+import { TagsList } from "@/src/components/tags-list";
+import { Badge } from "@/src/components/ui/badge"
+import { getRoom } from "@/src/data-access/rooms";
 import { GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { VideoPlayer } from "./video-player";
-import { splitTags } from "@/lib/utils";
+import { splitTags } from "@/src/lib/utils";
 import { unstable_noStore } from "next/cache";
 
 export default async function RoomPage(props: {

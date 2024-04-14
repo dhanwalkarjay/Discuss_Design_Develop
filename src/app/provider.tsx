@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/themeProvider";
+import { ThemeProvider } from "@/src/components/themeProvider";
 import { SessionProvider } from "next-auth/react";
 import { ReactNode } from "react";
 

@@ -1,7 +1,7 @@
 'use server';
 
-import { deleteUser } from "@/data-access/users";
-import { getSession } from "@/lib/auth";
+import { deleteUser } from "@/src/data-access/users";
+import { getSession } from "@/src/lib/auth";
 
 export async function deleteAccountAction() {
     const session = await getSession();

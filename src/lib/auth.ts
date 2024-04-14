@@ -1,4 +1,4 @@
-import { db } from "@/db";
+import { db } from "@/src/db";
 import GoogleProvider from "next-auth/providers/google"
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import { AuthOptions, DefaultSession, getServerSession } from "next-auth";

@@ -1,6 +1,6 @@
-import { db } from "@/db"
-import { Room, room } from "@/db/schema";
-import { getSession } from "@/lib/auth";
+import { db } from "@/src/db"
+import { Room, room } from "@/src/db/schema";
+import { getSession } from "@/src/lib/auth";
 import { eq, like } from "drizzle-orm";
 
 export async function getRooms(search: string | undefined) {

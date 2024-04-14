@@ -1,11 +1,11 @@
 "use client";
 
-import { ModeToggle } from "@/components/modeToggel";
+import { ModeToggle } from "@/src/components/modeToggel";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { DeleteIcon, LogInIcon, LogOutIcon } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/src/components/ui/avatar"
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -18,7 +18,7 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-  } from "@/components/ui/alert-dialog"
+  } from "@/src/components/ui/alert-dialog"
 import { useState } from "react";
 import { deleteAccountAction } from "./actions";
 

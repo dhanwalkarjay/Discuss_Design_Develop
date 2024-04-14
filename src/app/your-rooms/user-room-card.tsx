@@ -1,12 +1,12 @@
 'use client';
 
-import { TagsList } from "@/components/tags-list";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Room } from "@/db/schema";
+import { TagsList } from "@/src/components/tags-list";
+import { Button } from "@/src/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/src/components/ui/card";
+import { Room } from "@/src/db/schema";
 import { GithubIcon, TrashIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
-import { splitTags } from "@/lib/utils";
+import { splitTags } from "@/src/lib/utils";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -17,7 +17,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from "@/src/components/ui/alert-dialog"
 import { deleteRoomAction } from "./actions";
 
 

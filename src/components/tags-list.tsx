@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { badgeVariants } from "./ui/badge";
-import { cn } from "@/lib/utils";
+import { cn } from "@/src/lib/utils";
 
 export function TagsList({ languages }: {languages: string[] }){
     const router = useRouter();
