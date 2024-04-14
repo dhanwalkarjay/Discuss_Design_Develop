@@ -1,13 +1,16 @@
-import { TagsList, splitTags } from "@/components/tags-list";
+import { TagsList } from "@/components/tags-list";
 import { Badge } from "@/components/ui/badge"
 import { getRoom } from "@/data-access/rooms";
 import { GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { VideoPlayer } from "./video-player";
+import { splitTags } from "@/lib/utils";
+import { unstable_noStore } from "next/cache";
 
 export default async function RoomPage(props: {
     params: {roomId: string};
 }) {
+    unstable_noStore();
     const roomid = props.params.roomId; 
 
     const room  = await getRoom(roomid);
