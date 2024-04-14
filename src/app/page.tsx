@@ -23,10 +23,10 @@ export default function LandingPage() {
           <div className="text-center">
             <Image className='inline-block' src="/icon.png" width="550" height="550" alt="hero logo" />
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-              your project with other devloper's
+              your project with other devlopers
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">
-              This platform is allows you to share your screen and work with other known or unknown developer's online. 
+              This platform is allows you to share your screen and work with other known or unknown developers online. 
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

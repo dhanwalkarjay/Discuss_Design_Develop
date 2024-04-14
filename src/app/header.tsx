@@ -91,7 +91,7 @@ export function Header() {
                                 Browse
                             </Link>
                             <Link className="hover:underline" href="/your-rooms">
-                                Your Room's
+                                Your Rooms
                             </Link>
                         </>
                     )}
