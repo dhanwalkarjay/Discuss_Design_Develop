@@ -1,12 +1,6 @@
 import { sql } from "drizzle-orm";
 import { timestamp, pgTable, text, primaryKey, integer, uuid } from "drizzle-orm/pg-core"
 import type { AdapterAccount } from "next-auth/adapters"
-
-export const testing = pgTable("testing", {
-    id: text("id").notNull().primaryKey(),
-    name: text("name"),
-    description: text("description"),
-});
    
   export const users = pgTable("user", {
     id: text("id").notNull().primaryKey(),

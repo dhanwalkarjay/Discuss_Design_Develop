@@ -4,7 +4,7 @@ import { TagsList } from "@/components/tags-list";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Room } from "@/db/schema";
-import { GithubIcon, TrashIcon } from "lucide-react";
+import { GithubIcon, TrashIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import { splitTags } from "@/lib/utils";
 import {
@@ -24,7 +24,12 @@ import { deleteRoomAction } from "./actions";
 export function UserRoomCard({room}: {room: Room}) {
     return (
       <Card>
-        <CardHeader>
+        <CardHeader className="relative">
+          <Button className="absolute top-3 right-3" size="icon">
+            <Link href={`/edit-room/${room.id}`}>
+              <PencilIcon />
+            </Link>
+          </Button>
           <CardTitle>{room.name}</CardTitle>
           <CardDescription>{room.description}</CardDescription>
         </CardHeader>
@@ -36,10 +41,10 @@ export function UserRoomCard({room}: {room: Room}) {
         </CardContent>
         <CardFooter className="flex gap-2">
           <Button asChild><Link href={`/rooms/${room.id}`}>Join Room</Link></Button>
-          <AlertDialog>
+        <AlertDialog>
           <AlertDialogTrigger asChild><Button variant={"destructive"} ><TrashIcon />Delete Room</Button></AlertDialogTrigger>
-          <AlertDialogContent>
-            <AlertDialogHeader>
+            <AlertDialogContent>
+              <AlertDialogHeader>
               <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
               <AlertDialogDescription>
                 This action cannot be undone. This will permanently remove the room
