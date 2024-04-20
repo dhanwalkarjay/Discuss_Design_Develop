@@ -147,15 +147,15 @@ export default function LandingPage() {
           <h2 className="mb-12 text-4xl leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">What is Discuss, Design, Develop?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">What is Discuss Design Develop?</summary>
               <div className="px-4 pb-4 text-gray-600">
-                <p>Discuss, Design, Develop is a collaborative platform tailored for developers to exchange ideas, work together on projects, and innovate collectively. It offers a suite of tools and features to streamline communication and project management, ultimately facilitating the creation of exceptional projects.</p>
+                <p>Discuss Design Develop is a collaborative platform tailored for developers to exchange ideas, work together on projects, and innovate collectively. It offers a suite of tools and features to streamline communication and project management, ultimately facilitating the creation of exceptional projects.</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">How can I start using Discuss, Design, Develop?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">How can I start using Discuss Design Develop?</summary>
               <div className="px-4 pb-4 text-gray-600">
-                <p>Getting started with Discuss, Design, Develop is simple! Just sign up for an account, create or join project rooms, invite collaborators, and start discussing ideas, designing solutions, and developing projects in real-time.</p>
+                <p>Getting started with Discuss Design Develop is simple! Just sign up for an account create or join project rooms invite collaborators, and start discussing ideas, designing solutions, and developing projects in real-time.</p>
               </div>
             </details>
             <details>
@@ -173,7 +173,7 @@ export default function LandingPage() {
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">Is Discuss, Design, Develop suitable for both small and large projects?</summary>
               <div className="px-4 pb-4 text-gray-600">
-                <p>Absolutely! Whether you're working on a small-scale project with a few collaborators or managing a large-scale development initiative with multiple teams, Discuss, Design, Develop provides the flexibility and scalability to accommodate projects of any size and complexity.</p>
+                <p>Absolutely! Whether youre working on a small-scale project with a few collaborators or managing a large-scale development initiative with multiple teams, Discuss, Design, Develop provides the flexibility and scalability to accommodate projects of any size and complexity.</p>
               </div>
             </details>
             <details>
